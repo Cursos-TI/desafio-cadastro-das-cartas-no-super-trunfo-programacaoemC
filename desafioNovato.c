@@ -130,12 +130,76 @@
 
         }
         
+        //*****Menu Interativo Switch***//
 
+        //Declarando Variaveis//
 
-
-
+        int opcao;
         
-        return 0;
+        printf("Menu Inicial\n");
+        printf("1.Comparativo Populacao\n");
+        printf("2.Comparativo Area\n");
+        printf("3.Comparativo Pontos Turisticos\n");
+        printf("4.Sair\n");
+        printf("Escolha Uma das opcões acima:\n");
+        scanf("%d", &opcao);
+ 
+        //Estrutura Switch//
+        switch (opcao)
+        {
+        case 1:
+            if (Populacao1 >= Populacao2)
+            {
+              printf("Populacao1 Venceu!!!\n");
+           
+            } else
+            {
+                printf("Populacao2 Venceu!!!\n");
+            
+            } elseif (Populacao1 == Populacao2);
+            {
+                printf("Empate!!!");
+            } 
+                break;
+            
+            case 2: 
+            if (Area1 >= Area2)
+            {
+              printf("Area1 Venceu!!!\n");
+           
+            } else
+            {
+                printf("Area2 Venceu!!!\n");
+            
+            } elseif (Area1 == Area2);
+            {
+                printf("Empate!!!");
+            } 
+                break;
+            
+            case 3:
+            if (Turismo1 >= Turismo2)
+            {
+              printf("Pontos Turiscos1 Venceu!!!\n");
+           
+            } else
+            {
+                printf("Pontos turiscos2 Venceu!!!\n");
+            
+            } elseif (Turismo1 == Turismo2);
+            {
+                printf("Empate!!!");
+            } 
+                break;
+
+            case 4: 
+                printf("Saindo...");
+            default:
+        printf("Opcao Invalida Tente Novamente");
+            break;
+        }
+   
+         
         
 
 
