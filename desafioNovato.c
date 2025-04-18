@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
     int main(){
 
@@ -203,4 +205,108 @@
         
         return 0;
 
-    }
+
+        //Terceiro Desafio Mestre Comparacao de atributos//
+
+        int resultado1,resultado2;
+        char Atributo1,Atributo2;
+        char País1,País2;
+        int Ataque1,Ataque2,Defesa1,Defesa2;
+
+        //Gerador Numeros Aleatorios//
+        srand(time(0));
+        Ataque1 = 2;
+        Ataque2 = 1;
+        Defesa1 = 1;
+        Defesa2 = 2;
+        
+        printf("Digite o nome do País:\n");
+        scanf("%s",&País1);
+
+        //Inicio Jogo//
+        printf("Iniciando Bem vindo De volta Jogador:\n");
+        printf("Escolha o primeiro Atributo:\n");
+        printf("A. Ataque\n");
+        printf("D. Defesa\n");
+        
+        printf("Escolha a Comparacao ");
+        scanf("%c",&Atributo1);
+
+        switch (Atributo1)
+        {
+        case 'A':
+        case 'a':
+            printf("Voce Escolheu a Opcao ataque!\n");
+            resultado1 = Ataque1 > Ataque2 ? 1 : 0;
+            break;
+            case 'D':
+            case 'd':
+                printf("Voce Escolheu a Opcao Defesa!\n");
+                resultado1 = Defesa1 > Defesa2 ? 1 : 0;
+                break;
+                   
+        
+        default:
+        printf("Opcao Invalida Tente Novamente!");
+            break;
+            
+            //Sgeundo Atributo
+
+
+            printf("Atenção!! Não selecione Atributos Repetidos!!");
+            printf("Escolha o Segundo Atributo:\n");
+            printf("A. Ataque\n");
+            printf("D. Defesa\n");
+            
+            printf("Escolha a Comparacao ");
+            scanf("%c",&Atributo2);
+            
+            if (Atributo1 == Atributo2)
+            {
+                printf("Voce Escolheu Mesmo Atributo!!");;
+
+            } else{
+            
+            
+    
+            switch (Atributo2)
+            {
+            case 'A':
+            case 'a':
+                printf("Voce Escolheu a Opcao ataque!\n");
+                resultado1 = Ataque1 > Ataque2 ? 1 : 0;
+                break;
+                case 'D':
+                case 'd':
+                    printf("Voce Escolheu a Opcao Defesa!\n");
+                    resultado1 = Defesa1 > Defesa2 ? 1 : 0;
+                    break;
+                       
+            
+            default:
+            printf("Opcao Invalida Tente Novamente!");
+                break;
+
+                if (resultado1 && resultado2)
+                {
+                    printf("Parabens Voce Venceu!!\n");
+                } else if (resultado1 != resultado2)
+                {
+                   printf("Empate!!\n");
+                } else
+                {
+                    printf("Infelizmente NÃO Deu Voce Perdeu!!\n");
+                }
+                
+
+                
+                
+    
+
+        }
+
+    }  
+
+//Terceiro Desafio Mestre
+
+ }
