@@ -215,10 +215,10 @@
 
         //Gerador Numeros Aleatorios//
         srand(time(0));
-        Ataque1 = 2;
-        Ataque2 = 1;
-        Defesa1 = 1;
-        Defesa2 = 2;
+        Area1 = 2;
+        Area2 = 1;
+        Populacao1 = 1;
+        Populacao2 = 2;
         
         printf("Digite o nome do País:\n");
         scanf("%s",&País1);
@@ -226,8 +226,8 @@
         //Inicio Jogo//
         printf("Iniciando Bem vindo De volta Jogador:\n");
         printf("Escolha o primeiro Atributo:\n");
-        printf("A. Ataque\n");
-        printf("D. Defesa\n");
+        printf("A. Area\n");
+        printf("P. Populacao\n");
         
         printf("Escolha a Comparacao ");
         scanf("%c",&Atributo1);
@@ -236,13 +236,13 @@
         {
         case 'A':
         case 'a':
-            printf("Voce Escolheu a Opcao ataque!\n");
-            resultado1 = Ataque1 > Ataque2 ? 1 : 0;
+            printf("Voce Escolheu a Opcao Area!\n");
+            resultado1 = Area1 > Area2 ? 1 : 0;
             break;
-            case 'D':
-            case 'd':
-                printf("Voce Escolheu a Opcao Defesa!\n");
-                resultado1 = Defesa1 > Defesa2 ? 1 : 0;
+            case 'P':
+            case 'p':
+                printf("Voce Escolheu a Opcao Populacao:!\n");
+                resultado1 = Populacao1 > Populacao2 ? 1 : 0;
                 break;
                    
         
@@ -255,8 +255,8 @@
 
             printf("Atenção!! Não selecione Atributos Repetidos!!");
             printf("Escolha o Segundo Atributo:\n");
-            printf("A. Ataque\n");
-            printf("D. Defesa\n");
+            printf("A. Area\n");
+            printf("P. Populacao\n");
             
             printf("Escolha a Comparacao ");
             scanf("%c",&Atributo2);
@@ -273,13 +273,13 @@
             {
             case 'A':
             case 'a':
-                printf("Voce Escolheu a Opcao ataque!\n");
-                resultado1 = Ataque1 > Ataque2 ? 1 : 0;
+                printf("Voce Escolheu a Opcao Area!\n");
+                resultado1 = Area1 > Area2 ? 1 : 0;
                 break;
                 case 'D':
                 case 'd':
-                    printf("Voce Escolheu a Opcao Defesa!\n");
-                    resultado1 = Defesa1 > Defesa2 ? 1 : 0;
+                    printf("Voce Escolheu a Opcao Populacao!\n");
+                    resultado1 = Populacao1 > Populacao2 ? 1 : 0;
                     break;
                        
             
